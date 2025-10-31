@@ -1283,36 +1283,20 @@
         .containerslide
         {
             min-height: 50vh;
-            width:60%;
-            border:8px solid black;
+            width:80%;
+            height:90%;
+            border:5px solid goldenrod;
             margin:4rem auto;
             border-radius: 5px;
             box-shadow: 10px 10px 35px black;
             position: relative;
             bottom:4050px;
-            background: url(slidee1.jpg) ;
+            background: url(poster.jpg) ;
+            background-repeat: no-repeat;
+            background-size: 100%;
             
         }
-        .btn-left{
-            position:absolute;
-            left:-2%;
-            top:50%;
-            background-color: goldenrod;
-            padding:.4em .6em;
-            border-radius: 2em;
-            transform:translateY(calc(-50%));
-            cursor: pointer;
-         }
-         .btn-right{
-            position:absolute;
-            right:-2%;
-            top:50%;
-            background-color: goldenrod;
-            padding:.4em .6em;
-            border-radius: 2em;
-            transform:translateY(calc(-50%));
-            cursor: pointer;
-         }
+        
         
        
 
@@ -1469,8 +1453,6 @@
                 <h3 id="Q3">Fast delivery</h3>
             </div>
             <div class="containerslide">
-                <a class="btn btn-left"><i class="fa-solid fa-caret-left"></i></a>
-                <a class="btn btn-right"><i class="fa-solid fa-caret-right"></i></a>
             </div>
             <div class="total">
             <div class="last">
@@ -1519,35 +1501,11 @@
                     
                 </dl>
                 </div>
-                <script>
-            const containerslide = document.querySelector('.containerslide');
-            const btns = document.querySelectorAll('.btn')
-            const imgList = ["slidee1","slidee2","slidee3","slidee4"]
-            let index=0
-            btns.forEach((button)=>{
-                button.addEventListener('click',()=>{
-                    console.log('clicked')
-                   if(button.classList.contains('btn-left')){
-                       index--;
-                       if(index<0){
-                             index = imgList.lenght-1;
-                       } 
-                       containerslide.style.background = `url("${imgList[index]}.jpg")`
-                   }
-                   else{
-                         index++;
-                       if(index==imgList.length){
-                             index = 0;
-                       } 
-                       containerslide.style.background = `background: url("${imgList[index]}.jpg")`
-                   }
-                })
-            })
-
-        </script>
+                
                 
                 
                 
 </body>
+
 
 </html>
